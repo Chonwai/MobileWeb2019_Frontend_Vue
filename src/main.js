@@ -6,6 +6,9 @@ import store from './store'
 import axios from 'axios'
 import './assets/tailwind.css'
 import i18n from './i18n'
+import VueSweetalert2 from 'vue-sweetalert2';
+
+Vue.use(VueSweetalert2);
 
 Vue.prototype.$http = axios
 

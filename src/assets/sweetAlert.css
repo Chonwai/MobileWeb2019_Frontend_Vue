@@ -1,0 +1,4 @@
+// style.scss 
+@import '~sweetalert2/src/variables';
+$swal2-background: #990000;
+@import '~sweetalert2/src/sweetalert2';

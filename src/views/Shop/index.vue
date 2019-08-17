@@ -1,13 +1,13 @@
 <template>
   <div class='all-shops-page'>
       <div class="shop-container w-screen flex justify-center items-center flex-col p-4">
-          <div class="shop-card w-full border border-gray-600 mt-4 mb-4 rounded" v-for="(shop, index) in allShops" :key="index">
+          <router-link class="w-full border border-gray-600 mt-4 mb-4 rounded cursor-pointer" v-for="(shop, index) in allShops" :key="index" :to="'/shop/' + index">
               <img class="card-img rounded-t w-full" :src="shop.photo_url" :alt="shop.name">
               <div class="card-info">
                 <p class=" font-bold text-2xl">{{ shop.name }}</p>
                 <p>地址：{{ shop.address }}</p>
               </div>
-          </div>
+          </router-link>
       </div>
   </div>
 </template>
