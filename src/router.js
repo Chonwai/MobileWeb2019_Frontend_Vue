@@ -31,5 +31,8 @@ export default new Router({
             component: () =>
                 import ('./views/Shop/shop.vue')
         }
-    ]
+    ],
+    scrollBehavior(to, from, savedPosition) {
+        return { x: 0, y: 0 }
+    }
 })

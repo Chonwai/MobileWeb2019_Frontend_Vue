@@ -7,7 +7,7 @@
         :key="index"
         :to="'/shop/' + index"
       >
-        <div class="title-conatiner h-12 flex flex-row p-2">
+        <div class="title-conatiner h-12 flex flex-row py-2 px-4">
           <div class="shop-icon flex justify-start w-1/5">
             <img class="w-auto h-full" src="../../assets/img/shop.svg" />
           </div>
@@ -21,6 +21,16 @@
           :src="shop.photo_url"
           :alt="shop.name"
         />
+        <div class="review-container w-full h-12 flex flex-row py-2 px-4">
+          <div class="like-box flex items-center">
+            <img class="h-6 flex w-auto" src="../../assets/img/like.svg" alt />
+            <p class="flex w-auto h-full ml-2 text-xl justify-start items-center">{{ shop.like }}</p>
+          </div>
+          <div class="like-box flex items-center ml-4">
+            <img class="h-6 flex w-auto" src="../../assets/img/dislike.svg" alt />
+            <p class="flex w-auto h-full ml-2 text-xl justify-start items-center">{{ shop.dislike }}</p>
+          </div>
+        </div>
       </router-link>
     </div>
   </div>
