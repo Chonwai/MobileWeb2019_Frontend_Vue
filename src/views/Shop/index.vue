@@ -1,14 +1,28 @@
 <template>
-  <div class='all-shops-page'>
-      <div class="shop-container w-screen flex justify-center items-center flex-col p-4">
-          <router-link class="w-full border border-gray-600 mt-4 mb-4 rounded cursor-pointer" v-for="(shop, index) in allShops" :key="index" :to="'/shop/' + index">
-              <img class="card-img rounded-t w-full" :src="shop.photo_url" :alt="shop.name">
-              <div class="card-info">
-                <p class=" font-bold text-2xl">{{ shop.name }}</p>
-                <p>地址：{{ shop.address }}</p>
-              </div>
-          </router-link>
-      </div>
+  <div class="all-shops-page">
+    <div class="shop-container w-screen flex justify-center items-center flex-col">
+      <router-link
+        class="w-full mb-4 cursor-pointer border-gray-300"
+        v-for="(shop, index) in allShops"
+        :key="index"
+        :to="'/shop/' + index"
+      >
+        <div class="title-conatiner h-12 flex flex-row p-2">
+          <div class="shop-icon flex justify-start w-1/5">
+            <img class="w-auto h-full" src="../../assets/img/shop.svg" />
+          </div>
+          <div class="shop-info w-4/5 flex flex-col justify-center items-start">
+            <p class="font-bold text-sm">{{ shop.name }}</p>
+            <p class="text-2xs">{{ shop.address }}</p>
+          </div>
+        </div>
+        <img
+          class="card-img w-full h-64 object-cover bg-center"
+          :src="shop.photo_url"
+          :alt="shop.name"
+        />
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -22,8 +36,8 @@ export default {
   },
   methods: {
     getAllShop() {
-         this.allShops = this.$store.state.shops;
-         console.log(this.allShops);
+      this.allShops = this.$store.state.shops;
+      console.log(this.allShops);
     }
   },
   created() {

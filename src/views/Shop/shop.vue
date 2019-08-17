@@ -60,9 +60,7 @@
     </section>
     <section class="recommand-container w-screen p-4">
       <p class="flex justify-start text-2xl">猜你喜歡：</p>
-      <div class="recommand-shops">
-          
-      </div>
+      <div class="recommand-shops"></div>
     </section>
   </div>
 </template>
@@ -81,13 +79,13 @@ export default {
     addRate(rate) {
       if (rate === "like") {
         this.$store.state.shops[this.shopID].like += 1;
+        this.$swal.fire("評論成功", "你推薦了此店鋪", "success");
       } else if (rate === "dislike") {
         this.$store.state.shops[this.shopID].dislike += 1;
+        this.$swal.fire("評論成功", "你不推薦此店鋪", "success");
       }
     },
-    getRecommandShop() {
-
-    }
+    getRecommandShop() {}
   },
   mounted() {
     this.shopInfo = this.$store.state.shops[this.shopID];
