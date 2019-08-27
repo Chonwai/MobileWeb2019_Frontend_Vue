@@ -30,6 +30,12 @@ export default new Router({
             name: 'Shop',
             component: () =>
                 import ('./views/Shop/shop.vue')
+        },
+        {
+            path: '/forum',
+            name: 'Forum',
+            component: () =>
+                import ('./views/Forum/ForumHome.vue')
         }
     ],
     scrollBehavior(to, from, savedPosition) {
