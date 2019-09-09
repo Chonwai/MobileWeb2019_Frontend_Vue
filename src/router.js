@@ -36,6 +36,12 @@ export default new Router({
             name: 'Forum',
             component: () =>
                 import ('./views/Forum/ForumHome.vue')
+        },
+        {
+            path: '/new',
+            name: 'New',
+            component: () =>
+                import ('./views/Post/PostIndex.vue')
         }
     ],
     scrollBehavior(to, from, savedPosition) {
