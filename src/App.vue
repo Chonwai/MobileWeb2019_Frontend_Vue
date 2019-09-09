@@ -5,8 +5,18 @@
       <router-link to="/about">About</router-link>
     </div> -->
     <router-view/>
+    <Footer class="fixed bottom-0 w-screen"/>
   </div>
 </template>
+
+<script>
+import Footer from './components/FooterNavigation/FooterNavigationIndex'
+export default {
+  components: {
+    Footer
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
