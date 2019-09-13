@@ -4,7 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
-    <router-view/>
+    <router-view id="main-window"/>
     <Footer class="fixed bottom-0 w-screen"/>
   </div>
 </template>
@@ -35,5 +35,8 @@ export default {
       color: #42b983;
     }
   }
+}
+#main-window {
+  @apply pb-14;
 }
 </style>
