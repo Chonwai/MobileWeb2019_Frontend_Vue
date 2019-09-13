@@ -8,13 +8,17 @@ class Photo {
     saveImage() {
         let result = this.compressImage();
         result.toDataURL('image/jpeg', 1);
-        result.toBlob((blob) => {
-            console.log(blob);
-        }, 'image/jpeg', 1);
+        result.toBlob(
+            blob => {
+                console.log(blob);
+            },
+            'image/jpeg',
+            1
+        );
         console.log(result);
     }
     compressImage() {
-        let canvas = document.createElement("canvas");
+        let canvas = document.createElement('canvas');
         canvas.width = this.image.width;
         canvas.height = this.image.height;
         let ctx = canvas.getContext('2d');

@@ -12,11 +12,9 @@ export default {
     data() {
         return {
             windowFlag: false
-        }
-    },
-}
+        };
+    }
+};
 </script>
 
-<style lang="scss" scoped>
-    
-</style>
+<style lang="scss" scoped></style>
