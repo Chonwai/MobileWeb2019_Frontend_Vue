@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <Header class="fixed top-0 w-screen" />
-        <router-view id="main-window" class="mt-14 mb-14"/>
-        <Footer class="fixed bottom-0 w-screen" />
+        <Header class="fixed top-0 w-screen z-50" />
+        <router-view id="main-window" class="mt-14 mb-14 z-10"/>
+        <Footer class="fixed bottom-0 w-screen z-50" />
     </div>
 </template>
 

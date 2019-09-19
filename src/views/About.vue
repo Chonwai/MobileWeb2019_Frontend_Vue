@@ -1,5 +1,5 @@
 <template>
-    <div class="about-container flex justify-center items-center p-4 flex-col h-screen w-screen">
+    <div class="about-container flex justify-center items-center p-4 flex-col w-screen">
         <h1>This project only for Mobile Web 2019</h1>
         <section class="mt-4">
             <div>
@@ -24,4 +24,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.about-container {
+    height: calc(100vh - 3.5rem - 3.5rem)
+}
+</style>

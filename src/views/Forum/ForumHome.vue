@@ -1,9 +1,6 @@
 <template>
-    <div class="forum-container p-4">
-        <p class="w-full flex text-2xl font-bold p-4">三盞燈之家論壇</p>
-        <!-- <nav class="filter">
-            <input class="search-filter" type="text" name="" id="">
-        </nav> -->
+    <div class="forum-container">
+        <p class="w-full flex text-2xl font-bold px-4 pt-4">三盞燈之家論壇</p>
         <section>
             <Item
                 v-for="(item, index) in forumContent"

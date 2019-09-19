@@ -38,16 +38,23 @@
             </swiper>
         </section>
         <nav class="home-nav-container w-screen h-32 justify-center items-center flex flex-row">
-            <div class="flex w-1/3 h-14">
-                <chatIcon class="h-full"/>
-            </div>
-            <div class="flex w-1/3 h-14">
-                <addIcon class="h-full"/>
-            </div>
-            <div class="flex w-1/3 h-14">
-                <placeholderIcon class="h-full"/>
-            </div>
+            <router-link class="flex w-1/3 h-24 p-4 justify-center items-center m-2 flex-col" :to="{ path: '/forum' }">
+                <chatIcon class="w-16 h-12"/>
+                <p class="mt-2 font-bold">論壇</p>
+            </router-link>
+            <router-link class="flex w-1/3 h-24 p-4 justify-center items-center m-2 flex-col" :to="{ path: '/new' }">
+                <addIcon class="w-16 h-12"/>
+                <p class="mt-2 font-bold">發表</p>
+            </router-link>
+            <router-link class="flex w-1/3 h-24 p-4 justify-center items-center m-2 flex-col" :to="{ path: '/shop' }">
+                <placeholderIcon class="w-16 h-12"/>
+                <p class="mt-2 font-bold">店鋪</p>
+            </router-link>
         </nav>
+        <section class="recommend-container px-4 mb-20">
+            <p class="text-2xl w-full flex justify-start items-center">推薦店鋪</p>
+            <RecommendShop class="mt-2"/>
+        </section>
     </div>
 </template>
 
@@ -56,12 +63,14 @@
 import chatIcon from '@/assets/img/chat.svg?inline';
 import addIcon from '@/assets/img/pencil.svg?inline';
 import placeholderIcon from '@/assets/img/placeholder.svg?inline';
+import RecommendShop from '@/components/RecommendShop/RecommendShop.vue';
 export default {
     name: 'home',
     components: {
         chatIcon,
         addIcon,
-        placeholderIcon
+        placeholderIcon,
+        RecommendShop
     },
     data() {
         return {
@@ -79,7 +88,7 @@ export default {
 <style lang="scss" scoped>
 nav {
     path {
-        fill: deepskyblue;
+        fill: #4299e1;
     }
 }
 </style>

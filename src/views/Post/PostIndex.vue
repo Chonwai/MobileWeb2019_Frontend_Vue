@@ -1,5 +1,5 @@
 <template>
-    <section class="post-component w-screen p-8">
+    <section class="post-component w-screen p-4">
         <p class="w-full flex text-2xl font-bold">發表貼文</p>
         <div class="input-box w-full mt-4 block">
             <label class="inline-block float-left" for="image">照片：</label>

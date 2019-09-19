@@ -1,9 +1,5 @@
 <template>
     <div class="shop-view relative">
-        <nav class="absolute w-screen h-16 top-0 left-0 z-50 p-4 flex justify-start">
-            <router-link class="text-white" to="/shop">Back</router-link>
-            <router-link class="text-white ml-4" to="/">Home</router-link>
-        </nav>
         <div class="shop-banner w-screen h-auto relative">
             <div class="mask w-screen h-auto">
                 <img class="w-screen object-cover opacity-50" :src="shopInfo.photo_url" :alt="shopInfo.name" srcset />
@@ -60,13 +56,14 @@
             </div>
         </section>
         <section class="recommand-container w-screen p-4">
-            <p class="flex justify-start text-2xl">猜你喜歡：</p>
-            <div class="recommand-shops"></div>
+            <p class="flex justify-start text-2xl">猜你喜歡</p>
+            <RecommendShop class="mt-2"/>
         </section>
     </div>
 </template>
 
 <script>
+import RecommendShop from '@/components/RecommendShop/RecommendShop.vue';
 export default {
     name: 'Shop',
     data() {
@@ -95,6 +92,9 @@ export default {
     created() {
         this.shopID = this.$route.params.id;
         // this.$swal('Hello Vue world!!!');
+    },
+    components: {
+        RecommendShop
     }
 };
 </script>
