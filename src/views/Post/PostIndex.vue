@@ -36,6 +36,10 @@
             </div>
         </div>
         <div class="input-box w-full mt-4 block">
+            <label class="inline-block float-left" for="nickname">暱稱：</label>
+            <input id="nickname" class="border rounded-sm w-full p-2" type="text" />
+        </div>
+        <div class="input-box w-full mt-4 block">
             <label class="inline-block float-left" for="title">標題：</label>
             <input id="title" class="border rounded-sm w-full p-2" type="text" />
         </div>
@@ -43,7 +47,7 @@
             <label class="inline-block float-left" for="content">內容：</label>
             <textarea id="content" class="border rounded-sm w-full p-2" cols="10" rows="10"></textarea>
         </div>
-        <div class="input-box w-full mt-4 mb-4 block">
+        <div class="input-box w-full mt-4 block">
             <button class="border border-blue-500 font-bold text-blue-500 rounded-sm w-full p-2" @click="submit">
                 提交
             </button>
@@ -61,7 +65,8 @@ export default {
     data() {
         return {
             title: '',
-            content: ''
+            content: '',
+            nickname: ''
         };
     },
     components: {

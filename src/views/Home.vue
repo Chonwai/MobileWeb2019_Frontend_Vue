@@ -1,18 +1,85 @@
 <template>
     <div class="home">
-        <!-- <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-        <!-- <router-link to="./shop">Shop</router-link>
-    <router-link to="./forum">Forum</router-link>
-    <router-link to="./about">About</router-link> -->
+        <section class="w-screen">
+            <swiper class="w-screen h-72" :options="swiperOption">
+                <swiper-slide class="flex justify-center items-center">
+                    <img
+                        class="w-full h-full object-center object-cover opacity-90"
+                        src="https://img1.qunarzz.com/travel/poi/1507/91/745bf2de1c7817.jpg_480x360x95_5a1a27a2.jpg"
+                        alt="三𦾟燈"
+                        srcset
+                    />
+                </swiper-slide>
+                <swiper-slide class="flex justify-center items-center">
+                    <img
+                        class="w-full h-full object-center object-cover opacity-90"
+                        src="https://travel.ulifestyle.com.hk/cms/spots_photo/original/20131206143324_0_1.jpg"
+                        alt="三𦾟燈"
+                        srcset
+                    />
+                </swiper-slide>
+                <swiper-slide class="flex justify-center items-center">
+                    <img
+                        class="w-full h-full object-center object-cover opacity-90"
+                        src="https://www.iam.gov.mo/showFile.ashx?w=210&h=0&p=cityguide/Photos/634853933638115.jpg"
+                        alt="三𦾟燈"
+                        srcset
+                    />
+                </swiper-slide>
+                <swiper-slide class="flex justify-center items-center">
+                    <img
+                        class="w-full h-full object-center object-cover opacity-90"
+                        src="https://imgs.gotrip.hk/wp-content/uploads/2016/07/macau_food28.jpg"
+                        alt="三𦾟燈"
+                        srcset
+                    />
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
+        </section>
+        <nav class="home-nav-container w-screen h-32 justify-center items-center flex flex-row">
+            <div class="flex w-1/3 h-14">
+                <chatIcon class="h-full"/>
+            </div>
+            <div class="flex w-1/3 h-14">
+                <addIcon class="h-full"/>
+            </div>
+            <div class="flex w-1/3 h-14">
+                <placeholderIcon class="h-full"/>
+            </div>
+        </nav>
     </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import chatIcon from '@/assets/img/chat.svg?inline';
+import addIcon from '@/assets/img/pencil.svg?inline';
+import placeholderIcon from '@/assets/img/placeholder.svg?inline';
 export default {
     name: 'home',
-    components: {}
+    components: {
+        chatIcon,
+        addIcon,
+        placeholderIcon
+    },
+    data() {
+        return {
+            swiperOption: {
+                pagination: {
+                    el: '.swiper-pagination'
+                }
+            }
+        };
+    },
+    mounted() {}
 };
 </script>
+
+<style lang="scss" scoped>
+nav {
+    path {
+        fill: deepskyblue;
+    }
+}
+</style>

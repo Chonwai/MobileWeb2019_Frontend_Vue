@@ -8,8 +8,12 @@ import './assets/tailwind.css';
 import i18n from './i18n';
 import VueSweetalert2 from 'vue-sweetalert2';
 import UUID from 'uuid';
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+import 'swiper/dist/css/swiper.css';
 
-Vue.use(VueSweetalert2, UUID);
+Vue.use(VueAwesomeSwiper)
+Vue.use(VueSweetalert2);
+Vue.use(UUID);
 
 Vue.prototype.$http = axios;
 

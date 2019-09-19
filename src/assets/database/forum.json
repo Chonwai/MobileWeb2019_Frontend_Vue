@@ -1,32 +1,35 @@
 {
     "forum": [{
             "postID": 0,
-            "username": "User 1",
+            "username": "Kaern Chan",
+            "Location": "Macau, China",
             "userID": 0,
-            "title": "This is title",
-            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "title": "呢間嘢幾好喎",
+            "content": "各位小仙女~~~這是一個好評模板，不要看了，下面都是廢話。因為本仙女很懶，不想每個寶貝都寫好評，所以才模仿網友的好評模板。但是這個寶貝不管是質量還是款式都是本仙女喜歡的~~~如果不喜歡，本仙女收到會很生氣，然後這個模板就會變成各種喋喋不休的吐槽，自然不會撒下這個好評給各位淘友參考。本寶貝還是極好的，來自一位懶省事的只愛購物不愛寫評論只想換積分的仙女~~~",
             "createDate": "1565047230234",
             "imageURL": "https://mobile-web-design-skill-competition.netlify.com/images/鏡子形象.jpg",
             "icon": "https://i.stack.imgur.com/l60Hf.png"
         },
         {
             "postID": 1,
-            "username": "User 2",
+            "username": "LAMSH",
+            "Location": "Macau, China",
             "userID": 1,
-            "title": "This is another title",
-            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "title": "三𦾟燈好多嘢食架！",
+            "content": "光復街至三盞燈路段，會開設多個東南亞美食攤檔，食客大可藉此良機，將各國美食“一網打盡”。",
             "createDate": "1565077230234",
-            "imageURL": "",
+            "imageURL": "http://www.asean-china-center.org/2012-11/13/131970959_101n.jpg",
             "icon": "https://i.stack.imgur.com/l60Hf.png"
         },
         {
             "postID": 2,
-            "username": "User 3",
+            "username": "Colby CY",
+            "Location": "Macau, China",
             "userID": 2,
-            "title": "This is another title",
-            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "title": "東南亞美食嘉年華",
+            "content": "除了東南亞美食嘉年華以外，三盞燈作為緬甸華僑的聚居處，更與自1995年起，在每年4月，由緬甸華僑互助會主辦、市政署及旅遊局協辦的“潑水節”活動息息相關。潑水節流行於泰國、緬甸、柬埔寨以及中國雲南等地，相當於中國的農曆新年，人們在這節慶中，以清水相互潑灑，祈求洗去過去一年的不順。主辦單位除了在多處地點進行大型花車巡遊及潑水嘉年華外，也會在三盞燈區舉行東南亞及緬甸傳統美食展，稱為“東南亞飲食文化街”，以作為潑水節中一個主要項目。",
             "createDate": "1565078230234",
-            "imageURL": "",
+            "imageURL": "http://app.houkongdaily.com/uploads/img-b250607a46d98f9f5bc779f4a3f827c0.jpeg",
             "icon": "https://i.stack.imgur.com/l60Hf.png"
         }
     ]

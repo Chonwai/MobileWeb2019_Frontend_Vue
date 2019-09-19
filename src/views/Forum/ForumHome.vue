@@ -12,6 +12,7 @@
                 :content="item.content"
                 :icon="item.icon"
                 :postImg="item.imageURL"
+                :userName="item.username"
             />
         </section>
         <!-- <footer>
@@ -22,7 +23,6 @@
 
 <script>
 import Item from './ForumItem';
-import ForumFooter from './ForumItem';
 import forumDB from '../../assets/database/forum.json';
 export default {
     name: 'ForumHome',
@@ -36,8 +36,7 @@ export default {
         console.log(this.forumContent);
     },
     components: {
-        Item,
-        ForumFooter
+        Item
     }
 };
 </script>

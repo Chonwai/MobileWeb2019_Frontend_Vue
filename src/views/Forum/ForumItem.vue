@@ -2,7 +2,7 @@
     <div class="forum-item-component m-4 p-4 text-left border rounded">
         <div class="flex flex-row items-center">
             <img class="icon rounded-full w-10 border h-10 object-cover object-center" :src="icon" alt />
-            <p class="text-2xl font-bold pl-4">{{ title }}</p>
+            <p class="text-xl font-bold pl-4">{{ userName }}</p>
         </div>
         <img
             class="post-img w-auto mt-2 object-cover object-center"
@@ -11,7 +11,8 @@
             :alt="title"
             id="postImg"
         />
-        <p class="text-xs mt-2">{{ content }}</p>
+        <p class="text-xl mt-2">{{ title }}</p>
+        <p class="text-xs">{{ content }}</p>
     </div>
 </template>
 

@@ -1,19 +1,18 @@
 <template>
     <div id="app">
-        <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-        <router-view id="main-window" />
+        <Header class="fixed top-0 w-screen" />
+        <router-view id="main-window" class="mt-14 mb-14"/>
         <Footer class="fixed bottom-0 w-screen" />
     </div>
 </template>
 
 <script>
 import Footer from './components/FooterNavigation/FooterNavigationIndex';
+import Header from './components/Header/HeaderIndex';
 export default {
     components: {
-        Footer
+        Footer,
+        Header
     }
 };
 </script>
@@ -35,8 +34,5 @@ export default {
             color: #42b983;
         }
     }
-}
-#main-window {
-    @apply pb-14;
 }
 </style>
