@@ -1,7 +1,7 @@
 <template>
     <div class="header-component h-14 bg-blue-500 text-white flex justify-center items-center">
-        <p class="text-xl font-bold">三𦾟燈之家</p>
-        <button class="absolute mx-4 right-0 text-sm text-white">
+        <p class="text-lg font-bold">{{ $t("appName") }}</p>
+        <button class="absolute mx-4 right-0 text-sm text-white" @click="changeLanguage(-1)">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path
@@ -18,8 +18,22 @@
 export default {
     name: 'Header',
     data() {
-        return {};
-    }
+        return {
+            defalutLanguage: 1
+        };
+    },
+    methods: {
+        changeLanguage(flag) {
+            this.defalutLanguage = this.defalutLanguage * flag;
+            // console.log(this.$i18n.locale);
+            if (this.defalutLanguage == 1) {
+                this.$i18n.locale = 'ch'
+            }
+            else if (this.defalutLanguage == -1) {
+                this.$i18n.locale = 'en'
+            }
+        }
+    },
 };
 </script>
 

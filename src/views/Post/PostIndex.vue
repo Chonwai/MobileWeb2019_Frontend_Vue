@@ -1,8 +1,8 @@
 <template>
     <section class="post-component w-screen p-4">
-        <p class="w-full flex text-2xl font-bold">發表貼文</p>
+        <p class="w-full flex text-2xl font-bold">{{ $t("newPost") }}</p>
         <div class="input-box w-full mt-4 block">
-            <label class="inline-block float-left" for="image">照片：</label>
+            <label class="inline-block float-left" for="image">{{ $t("image") }}</label>
             <div class="image-upload-box border rounded-sm w-full flex justify-center items-center">
                 <button class="flex-1 flex justify-center items-center border-r p-2" @click="openLocal">
                     <uploadIcon class="w-6 h-6" />
@@ -36,20 +36,20 @@
             </div>
         </div>
         <div class="input-box w-full mt-4 block">
-            <label class="inline-block float-left" for="nickname">暱稱：</label>
+            <label class="inline-block float-left" for="nickname">{{ $t("nickname") }}</label>
             <input id="nickname" class="border rounded-sm w-full p-2" type="text" />
         </div>
         <div class="input-box w-full mt-4 block">
-            <label class="inline-block float-left" for="title">標題：</label>
+            <label class="inline-block float-left" for="title">{{ $t("title") }}</label>
             <input id="title" class="border rounded-sm w-full p-2" type="text" />
         </div>
         <div class="input-box w-full mt-4 block">
-            <label class="inline-block float-left" for="content">內容：</label>
+            <label class="inline-block float-left" for="content">{{ $t("content") }}</label>
             <textarea id="content" class="border rounded-sm w-full p-2" cols="10" rows="10"></textarea>
         </div>
         <div class="input-box w-full mt-4 block">
             <button class="border border-blue-500 font-bold text-blue-500 rounded-sm w-full p-2" @click="submit">
-                提交
+                {{ $t("submit") }}
             </button>
         </div>
     </section>

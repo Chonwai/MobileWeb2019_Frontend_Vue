@@ -1,3 +1,14 @@
 {
-  "message": "hello i18n !!"
+    "appName": "Rotunda de Carlos da Maia Home",
+    "forum": "Fourm",
+    "post": "New",
+    "shop": "Shops",
+    "recommendShop": "Recommend Shops",
+    "forumName": "Rotunda de Carlos da Maia Home's Forum",
+    "newPost": "New Post",
+    "image": "Image",
+    "nickname": "Mickname",
+    "title": "Title",
+    "content": "Content",
+    "submit": "Submit"
 }

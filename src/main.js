@@ -9,9 +9,11 @@ import i18n from './i18n';
 import VueSweetalert2 from 'vue-sweetalert2';
 import UUID from 'uuid';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-import 'swiper/dist/css/swiper.css';
 
-Vue.use(VueAwesomeSwiper)
+import './assets/swiper.css';
+import './assets/swiper.js';
+
+Vue.use(VueAwesomeSwiper);
 Vue.use(VueSweetalert2);
 Vue.use(UUID);
 

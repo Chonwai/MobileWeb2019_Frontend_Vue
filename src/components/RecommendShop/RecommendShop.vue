@@ -1,6 +1,6 @@
 <template>
     <div class="recommend-container">
-        <swiper :options="swiperOption">
+        <swiper :options="recommendOption">
             <swiper-slide v-for="(item, index) in topNShop" :key="index">
                 <router-link :to="{ path: `/shop/${item.id}` }">
                     <img :src="item.photo_url" alt />
@@ -14,14 +14,10 @@
 export default {
     data() {
         return {
-            swiperOption: {
+            recommendOption: {
                 slidesPerView: 2,
                 spaceBetween: 20,
-                freeMode: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                }
+                freeMode: true
             },
             allShops: [],
             topNShop: [],

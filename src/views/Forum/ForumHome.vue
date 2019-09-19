@@ -1,6 +1,6 @@
 <template>
     <div class="forum-container">
-        <p class="w-full flex text-2xl font-bold px-4 pt-4">三盞燈之家論壇</p>
+        <p class="w-full flex text-2xl font-bold px-4 pt-4">{{ $t("forumName") }}</p>
         <section>
             <Item
                 v-for="(item, index) in forumContent"
