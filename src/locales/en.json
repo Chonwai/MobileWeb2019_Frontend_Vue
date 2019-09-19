@@ -10,5 +10,12 @@
     "nickname": "Mickname",
     "title": "Title",
     "content": "Content",
-    "submit": "Submit"
+    "submit": "Submit",
+    "submitSuccess": "Success",
+    "submitInfo": "Since this version is a testing version. Your post cannot upload to the real forum!",
+    "score": "Score",
+    "weAreHere": "We Are Here",
+    "guessYouLike": "Guess You Like",
+    "recommend": "You recommend this shop!",
+    "noRecommend": "You no-recommend this shop!"
 }

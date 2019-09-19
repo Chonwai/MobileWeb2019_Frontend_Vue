@@ -20,7 +20,7 @@
             </div>
         </div>
         <section class="like-dislike p-4 w-screen border-b border-gray-300">
-            <p class="flex justify-start text-2xl">評分：</p>
+            <p class="flex justify-start text-2xl">{{ $t("score") }}</p>
             <div class="flex flex-row w-full mt-2">
                 <div class="like-box flex-1 flex items-center flex-col" @click="addRate('like')">
                     <img class="w-1/5" src="../../assets/img/like.svg" alt srcset />
@@ -33,7 +33,7 @@
             </div>
         </section>
         <section class="map-container w-screen border-b border-gray-300">
-            <p class="flex justify-start text-2xl py-4 px-4">我們在此：</p>
+            <p class="flex justify-start text-2xl py-4 px-4">{{ $t("weAreHere") }}</p>
             <div class="mapouter">
                 <div class="gmap_canvas">
                     <iframe
@@ -56,7 +56,7 @@
             </div>
         </section>
         <section class="recommand-container w-screen p-4">
-            <p class="flex justify-start text-2xl">猜你喜歡</p>
+            <p class="flex justify-start text-2xl">{{ $t("guessYouLike") }}</p>
             <RecommendShop class="mt-2"/>
         </section>
     </div>
@@ -77,10 +77,10 @@ export default {
         addRate(rate) {
             if (rate === 'like') {
                 this.$store.state.shops[this.shopID].like += 1;
-                this.$swal.fire('評論成功', '你推薦了此店鋪', 'success');
+                this.$swal.fire(this.$i18n.t("submitSuccess"), this.$i18n.t("recommend"), 'success');
             } else if (rate === 'dislike') {
                 this.$store.state.shops[this.shopID].dislike += 1;
-                this.$swal.fire('評論成功', '你不推薦此店鋪', 'success');
+                this.$swal.fire(this.$i18n.t("submitSuccess"), this.$i18n.t("noRecommend"), 'success');
             }
         },
         getRecommandShop() {}

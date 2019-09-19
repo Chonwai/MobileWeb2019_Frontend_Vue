@@ -10,5 +10,12 @@
     "nickname": "暱稱",
     "title": "標題",
     "content": "內容",
-    "submit": "提交"
+    "submit": "提交",
+    "submitSuccess": "發表成功",
+    "submitInfo": "由於此版本為測試版本，因此無法發表到論壇上！",
+    "score": "評分",
+    "weAreHere": "我們在此",
+    "guessYouLike": "猜你喜歡",
+    "recommend": "你推薦了此店鋪！",
+    "noRecommend": "你不推薦此店鋪！"
 }

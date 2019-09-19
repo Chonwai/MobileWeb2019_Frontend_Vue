@@ -81,14 +81,9 @@ export default {
             await this.$refs.cameraUploader.click();
         },
         async getImage(e) {
-            // var image = new Image();
             let preview = document.getElementById('imagePreview');
             preview.style.height = `${(preview.offsetWidth * 4) / 6}px`;
             preview.style.width = `${preview.offsetWidth}px`;
-            // const uuidv4 = require("uuid/v4");
-            // let filename = uuidv4();
-            // image.readAsDataURL(e.srcElement.files[0]);
-            // console.log(image);
             var src = URL.createObjectURL(e.srcElement.files[0]);
             preview.src = src;
 
@@ -98,7 +93,7 @@ export default {
             };
         },
         submit() {
-            this.$swal.fire('發表成功', '由於此版本為測試版本，因此無法發表到論壇上！', 'success');
+            this.$swal.fire(this.$i18n.t("submitSuccess"), this.$i18n.t("submitInfo"), 'success');
         }
     }
 };
